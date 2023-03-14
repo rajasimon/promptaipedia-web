@@ -1,0 +1,36 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+	}
+	html {
+		font-family: DM Sans,-apple-system,"system-ui",Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+	}
+	@font-face {
+		font-family: 'Manrope';
+		src: url('/fonts/Manrope/Manrope-Bold.woff2') format('woff2');
+	}
+	@font-face {
+		font-family: 'DM Sans';
+		src: url('/fonts/DMSans/DMSans-Bold.ttf') format('ttf');
+	}
+</style>
