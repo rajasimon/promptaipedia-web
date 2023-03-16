@@ -1,8 +1,9 @@
 ---
+import "../styles/main.scss";
+
 export interface Props {
 	title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -20,17 +21,13 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
+	body {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
 	}
-	html {
-		font-family: DM Sans,-apple-system,"system-ui",Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-	}
-	@font-face {
-		font-family: 'Manrope';
-		src: url('/fonts/Manrope/Manrope-Bold.woff2') format('woff2');
-	}
-	@font-face {
-		font-family: 'DM Sans';
-		src: url('/fonts/DMSans/DMSans-Bold.ttf') format('ttf');
+		
+	main {
+		flex: 1;
 	}
 </style>
