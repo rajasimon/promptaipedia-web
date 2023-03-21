@@ -4,6 +4,39 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700');
 
 
+$cerise: #D63E67;
+$cerise-dark: #ae3848;
+$alabaster: #F5F0E4;
+
 $family-sans-serif: DM Sans,-apple-system,"system-ui",Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 $family-secondary: Manrope,sans-serif;
+$body-background-color: $alabaster;
 @import "bulma/bulma.sass";
+
+.has-background-alabaster {
+    background-color: $alabaster;
+}
+.content blockquote {
+    border-left: 5px solid $cerise;
+}
+
+.is-cerise {
+    color: $cerise;
+}
+button.is-cerise {
+    background-color: $cerise;
+    border-color: $cerise;
+    color: $alabaster;
+}
+button.is-cerise:hover {
+    background-color: $cerise-dark;
+    color: $alabaster;
+}
+button.is-cerise.is-outlined {
+    background-color: transparent;
+    color: $cerise;
+}
+button.is-cerise.is-outlined:hover {
+    background-color: $cerise;
+    color: $alabaster;
+}
