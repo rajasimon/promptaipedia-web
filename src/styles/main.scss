@@ -23,20 +23,20 @@ $body-background-color: $alabaster;
 .is-cerise {
     color: $cerise;
 }
-button.is-cerise {
+.button.is-cerise {
     background-color: $cerise;
     border-color: $cerise;
     color: $alabaster;
 }
-button.is-cerise:hover {
+.button.is-cerise:hover {
     background-color: $cerise-dark;
     color: $alabaster;
 }
-button.is-cerise.is-outlined {
+.button.is-cerise.is-outlined {
     background-color: transparent;
     color: $cerise;
 }
-button.is-cerise.is-outlined:hover {
+.button.is-cerise.is-outlined:hover {
     background-color: $cerise;
     color: $alabaster;
 }
