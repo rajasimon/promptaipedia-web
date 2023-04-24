@@ -5,6 +5,7 @@
       <div class="column is-12-mobile is-4-desktop">
         <div class="box p-6 notification is-light">
           <h1 class="title is-size-4">Life Time - <span>first 100 users</span> </h1>
+          <h1 class="title has-text-danger is-size-4 is-hidden" id="lifetimeMessage"></h1>
           <h1 class="title is-1 is-spaced">
             <div class="is-flex">
               <div class="is-flex">
@@ -47,3 +48,19 @@
     </div>
   </div>
 </section>
+
+<script>
+  const lifetimeMessage = document.getElementById("lifetimeMessage")
+
+  fetch("http://localhost:8000/accounts/lifetime-count/")
+    .then((response) => {
+      response.json().then((data) => {
+        if (data.remaining_lifetime_count > 0) {
+          console.log(lifetimeMessage)
+          lifetimeMessage.classList.remove("is-hidden")
+          lifetimeMessage.innerHTML = `Hurry only ${data.remaining_lifetime_count} left`
+        }
+        console.log(data)
+      })
+    })
+</script>
