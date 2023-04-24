@@ -56,11 +56,9 @@
     .then((response) => {
       response.json().then((data) => {
         if (data.remaining_lifetime_count > 0) {
-          console.log(lifetimeMessage)
           lifetimeMessage.classList.remove("is-hidden")
           lifetimeMessage.innerHTML = `Hurry only ${data.remaining_lifetime_count} left`
         }
-        console.log(data)
       })
     })
 </script>
