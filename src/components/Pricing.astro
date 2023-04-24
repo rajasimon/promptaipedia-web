@@ -52,7 +52,7 @@
 <script>
   const lifetimeMessage = document.getElementById("lifetimeMessage")
 
-  fetch("http://localhost:8000/accounts/lifetime-count/")
+  fetch("https://app.promptaipedia.com/accounts/lifetime-count/")
     .then((response) => {
       response.json().then((data) => {
         if (data.remaining_lifetime_count > 0) {
