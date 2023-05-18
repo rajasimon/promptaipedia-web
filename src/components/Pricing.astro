@@ -1,49 +1,13 @@
 <section class="section">
   <div class="container">
     <h1 class="title has-text-centered is-family-secondary">Pricing</h1>
-    <div class="buttons has-addons is-centered">
-      <div class="field has-addons">
-        <p class="control">
-          <button class="button is-cerise is-active" id="monthlyPlan">
-            <span>Montly</span>
-          </button>
-        </p>
-        <p class="control">
-          <button class="button" id="yearlyPlan">
-            <span>Yearly</span>
-          </button>
-        </p>
-      </div>
-    </div>
     <div class="columns is-mobile is-multiline is-centered is-vcentered">
       <div class="column is-12-mobile is-4-desktop">
         <div class="box p-6 notification is-light">
-          <h1 class="title is-size-4">Individual</h1>
+          <h1 class="title is-size-4">Yearly</h1>
           <h1 class="title is-1 is-spaced">
             <div class="is-flex">
               <div class="is-flex" id="individualPlan">
-                <span class="is-size-4 is-align-items-start">$</span>
-                <span>12</span>
-                <span class="is-size-4 has-text-grey mx-2 mt-5">/</span>
-                <span class="is-size-4 my-3 mt-5 mb-3 has-text-grey">Month</span> 
-              </div>
-            </div>
-          </h1>
-          <p class="subtitle">Chrome Extension</p>
-          <p class="subtitle">Community Prompts</p>
-          <p class="subtitle">Save your own Prompts</p>
-          <p class="subtitle">Prompt Optimizer <span class="is-size-6 has-text-danger">* new</span></p>
-          <div class="buttons">
-            <a href="https://app.promptaipedia.com" class="button is-medium is-cerise is-fullwidth">Get Started for Free</a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-12-mobile is-4-desktop">
-        <div class="box p-6 notification is-light">
-          <h1 class="title is-size-4">Team</h1>
-          <h1 class="title is-1 is-spaced">
-            <div class="is-flex">
-              <div class="is-flex" id="teamPlan">
                 <span class="is-size-4 is-align-items-start">$</span>
                 <span>29</span>
                 <span class="is-size-4 has-text-grey mx-2 mt-5">/</span>
@@ -51,102 +15,37 @@
               </div>
             </div>
           </h1>
-          <p class="subtitle">All the feature from Individual</p>
-          <p class="subtitle">Team Prompts</p>
-          <p class="subtitle">Categorized Prompts</p>
-          <p class="subtitle">Prompt Template Execute API <span class="is-size-6 has-text-danger">* new</span></p>
+          <p class="subtitle">Chrome Extension</p>
+          <p class="subtitle">Community Prompts</p>
+          <p class="subtitle">Save your own Prompts</p>
+          <p class="subtitle">One year updates</p>
           <div class="buttons">
-            <a href="https://app.promptaipedia.com" class="button is-fullwidth is-cerise is-medium">Get Started for Free</a>
+            <a href="https://promptpedia.lemonsqueezy.com/checkout/buy/fba2f299-c91f-4220-b058-db37bf2521e9" class="button is-medium is-cerise is-fullwidth">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-12-mobile is-4-desktop">
+        <div class="box p-6 notification is-light">
+          <h1 class="title is-size-4">Life Time</h1>
+          <h1 class="title is-1 is-spaced">
+            <div class="is-flex">
+              <div class="is-flex" id="teamPlan">
+                <span class="is-size-4 is-align-items-start">$</span>
+                <span>99</span>
+                <span class="is-size-4 has-text-grey mx-2 mt-5">/</span>
+                <span class="is-size-4 my-3 mt-5 mb-3 has-text-grey">Life Time</span> 
+              </div>
+            </div>
+          </h1>
+          <p class="subtitle">Chrome Extension</p>
+          <p class="subtitle">Community Prompts</p>
+          <p class="subtitle">Save your own Prompts</p>
+          <p class="subtitle">Life time updates</p>
+          <div class="buttons">
+            <a href="https://promptpedia.lemonsqueezy.com/checkout/buy/1c4ec8d3-7fbd-42b7-ae4f-e723e1791ad2" class="button is-fullwidth is-cerise is-medium">Choose Plan</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script>
-  document.getElementById("monthlyPlan").addEventListener("click", function(event) {
-    document.getElementById("monthlyPlan").classList.add("is-cerise")
-    document.getElementById("yearlyPlan").classList.remove("is-cerise")
-    document.getElementById("individualPlan").innerHTML = ""
-    const firstSpanElementMonth = document.createElement("span")
-    const secondSpanElementMonth = document.createElement("span")
-    const thirdSpanElementMonth = document.createElement("third")
-    const fourthSpanElementMonth = document.createElement("fourth")
-    firstSpanElementMonth.innerHTML = "$"
-    secondSpanElementMonth.innerHTML = "12"
-    thirdSpanElementMonth.innerHTML = "/"
-    fourthSpanElementMonth.innerHTML = "Month"
-
-    firstSpanElementMonth.classList = "is-size-4 is-align-items-start"
-    thirdSpanElementMonth.classList = "is-size-4 has-text-grey mx-2 mt-5"
-    fourthSpanElementMonth.classList = "is-size-4 my-3 mt-5 mb-3 has-text-grey"
-    document.getElementById("individualPlan").appendChild(firstSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(secondSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(thirdSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(fourthSpanElementMonth)
-  })
-  document.getElementById("yearlyPlan").addEventListener("click", function(event) {
-    document.getElementById("monthlyPlan").classList.remove("is-cerise")
-    document.getElementById("yearlyPlan").classList.add("is-cerise")
-    document.getElementById("individualPlan").innerHTML = ""
-    const firstSpanElementMonth = document.createElement("span")
-    const secondSpanElementMonth = document.createElement("span")
-    const thirdSpanElementMonth = document.createElement("third")
-    const fourthSpanElementMonth = document.createElement("fourth")
-    firstSpanElementMonth.innerHTML = "$"
-    secondSpanElementMonth.innerHTML = "99"
-    thirdSpanElementMonth.innerHTML = "/"
-    fourthSpanElementMonth.innerHTML = "Month"
-
-    firstSpanElementMonth.classList = "is-size-4 is-align-items-start"
-    thirdSpanElementMonth.classList = "is-size-4 has-text-grey mx-2 mt-5"
-    fourthSpanElementMonth.classList = "is-size-4 my-3 mt-5 mb-3 has-text-grey"
-    document.getElementById("individualPlan").appendChild(firstSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(secondSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(thirdSpanElementMonth)
-    document.getElementById("individualPlan").appendChild(fourthSpanElementMonth)
-  })
-  document.getElementById("monthlyPlan").addEventListener("click", function(event) {
-    document.getElementById("monthlyPlan").classList.add("is-cerise")
-    document.getElementById("yearlyPlan").classList.remove("is-cerise")
-    document.getElementById("teamPlan").innerHTML = ""
-    const firstSpanElementMonth = document.createElement("span")
-    const secondSpanElementMonth = document.createElement("span")
-    const thirdSpanElementMonth = document.createElement("third")
-    const fourthSpanElementMonth = document.createElement("fourth")
-    firstSpanElementMonth.innerHTML = "$"
-    secondSpanElementMonth.innerHTML = "29"
-    thirdSpanElementMonth.innerHTML = "/"
-    fourthSpanElementMonth.innerHTML = "Year"
-
-    firstSpanElementMonth.classList = "is-size-4 is-align-items-start"
-    thirdSpanElementMonth.classList = "is-size-4 has-text-grey mx-2 mt-5"
-    fourthSpanElementMonth.classList = "is-size-4 my-3 mt-5 mb-3 has-text-grey"
-    document.getElementById("teamPlan").appendChild(firstSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(secondSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(thirdSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(fourthSpanElementMonth)
-  })
-  document.getElementById("yearlyPlan").addEventListener("click", function(event) {
-    document.getElementById("monthlyPlan").classList.remove("is-cerise")
-    document.getElementById("yearlyPlan").classList.add("is-cerise")
-    document.getElementById("teamPlan").innerHTML = ""
-    const firstSpanElementMonth = document.createElement("span")
-    const secondSpanElementMonth = document.createElement("span")
-    const thirdSpanElementMonth = document.createElement("third")
-    const fourthSpanElementMonth = document.createElement("fourth")
-    firstSpanElementMonth.innerHTML = "$"
-    secondSpanElementMonth.innerHTML = "249"
-    thirdSpanElementMonth.innerHTML = "/"
-    fourthSpanElementMonth.innerHTML = "Year"
-
-    firstSpanElementMonth.classList = "is-size-4 is-align-items-start"
-    thirdSpanElementMonth.classList = "is-size-4 has-text-grey mx-2 mt-5"
-    fourthSpanElementMonth.classList = "is-size-4 my-3 mt-5 mb-3 has-text-grey"
-    document.getElementById("teamPlan").appendChild(firstSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(secondSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(thirdSpanElementMonth)
-    document.getElementById("teamPlan").appendChild(fourthSpanElementMonth)
-  })
-</script>
