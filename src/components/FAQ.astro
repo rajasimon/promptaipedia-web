@@ -1,41 +1,107 @@
-<section class="section">
-  <div class="container">
-    <h1 class="title is-family-secondary">Frequently Asked Questions</h1>
+<div class="h-12">
 
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">What is Prompt Pedia?</h1>
-      <p class="subtitle">Prompt Pedia is a tool to write better prompts on ChatGPT.</p>
+</div>
+<h1 class="text-2xl font-bold text-black text-center">Pricing</h1>
+<div
+  class="flex flex-col items-start justify-center w-full gap-6 p-6 transition duration-300 rounded-xl"
+>
+  <div class="w-full">
+    <div
+      onclick="toggleAnswer(1)"
+      class="flex items-center justify-between gap-6 text-gray-800 cursor-pointer dark:text-gray-200 pb-6"
+    >
+      <p class="text-base transition duration-300">
+        What is Prompt Pedia?
+      </p>
+      <div class="flex items-center justify-center w-6 h-6 shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>        
+      </div>
     </div>
-  
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">What browsers is Prompt Pedia available on?</h1>
-      <p class="subtitle">Prompt Pedia is currently available on Chrome and Firefox. Other browsers are coming soon.</p>
-    </div>
-
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">Does it work on every website?</h1>
-      <p class="subtitle">Currently, it functions solely on https://chat.openai.com, but we intend to integrate it with as many websites as feasible in the future.</p>
-      <p class="subtitle">If you require the PP to operate on a specific website, kindly send us the details via email.</p>
-    </div>
-
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">Does it works on Windows?</h1>
-      <p class="subtitle">It can certainly work on windows. Type <code>ctrl + k</code> to bring the command palette.</p>
-    </div>
-
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">Does Prompt Pedia offers free plan?</h1>
-      <p class="subtitle">Yes seven days free trial to access everything. Free trial plan only available after the initial life time access over sorry about that.</p>
-    </div>
-
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">What data does Prompt Pedia collect?</h1>
-      <p class="subtitle">We collect your email address during the signup process and your prompts from Notion stays with you.</p>
-    </div>
-
-    <div class="block">
-      <h1 class="title is-spaced is-size-4">How do I get in touch?</h1>
-      <p class="subtitle">If you have questions, comments, or concerns, you can email us at support@promptaipedia.com</p>
-    </div>
+    <p
+      class="p-6 text-gray-600 border bg-pink-600 bg-opacity-5 border-[#FEF5F8] dark:border-[#0C0B0C] text-start rounded-xl dark:bg-opacity-5 dark:bg-pink-200 dark:text-gray-400 hidden"
+      data-faq-target="answer"
+      data-faq-id="1"
+    >
+      Prompt Pedia is a tool to write better prompts on ChatGPT.
+    </p>
   </div>
-</section>
+  <div class="w-full">
+    <div
+      onclick="toggleAnswer(2)"
+      class="flex items-center justify-between gap-6 pb-6 text-gray-800 cursor-pointer dark:text-gray-200"
+    >
+      <p class="text-base transition duration-300">
+        What browsers is Prompt Pedia available on?
+      </p>
+      <div class="flex items-center justify-center w-6 h-6 shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>        
+      </div>
+    </div>
+    <p
+      class="hidden p-6 text-gray-600 border bg-pink-600 bg-opacity-5 border-[#FEF5F8] dark:border-[#0C0B0C] text-start rounded-xl dark:bg-opacity-5 dark:bg-pink-200 dark:text-gray-400"
+      data-faq-target="answer"
+      data-faq-id="2"
+    >
+      Prompt Pedia is currently available on Chrome and Firefox. Other browsers are coming soon.
+    </p>
+  </div>
+  <div class="w-full">
+    <div
+      onclick="toggleAnswer(3)"
+      class="flex items-center justify-between gap-6 pb-6 text-gray-800 cursor-pointer dark:text-gray-200"
+    >
+      <p class="text-base transition duration-300">
+        Does it work on every website?
+      </p>
+      <div class="flex items-center justify-center w-6 h-6 shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>        
+      </div>
+    </div>
+    <p
+      class="hidden p-6 text-gray-600 border bg-pink-600 bg-opacity-5 border-[#FEF5F8] dark:border-[#0C0B0C] text-start rounded-xl dark:bg-opacity-5 dark:bg-pink-200 dark:text-gray-400"
+      data-faq-target="answer"
+      data-faq-id="3"
+    >
+      Currently, it functions solely on https://chat.openai.com, but we intend to integrate it with as many websites as feasible in the future.
+      If you require the PP to operate on a specific website, kindly send us the details via email.    
+    </p>
+  </div>
+  <div class="w-full">
+    <div
+      onclick="toggleAnswer(4)"
+      class="flex items-center justify-between gap-6 pb-6 text-gray-800 cursor-pointer dark:text-gray-200"
+    >
+      <p class="text-base transition duration-300">
+        Does it works on Windows?
+      </p>
+      <div class="flex items-center justify-center w-6 h-6 shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>        
+      </div>
+    </div>
+    <p
+      class="hidden p-6 text-gray-600 border bg-pink-600 bg-opacity-5 border-[#FEF5F8] dark:border-[#0C0B0C] text-start rounded-xl dark:bg-opacity-5 dark:bg-pink-200 dark:text-gray-400"
+      data-faq-target="answer"
+      data-faq-id="4"
+    >
+      It can certainly work on windows. Type ctrl + k to bring the command palette.
+    </p>
+  </div>
+</div>
+
+<script is:inline>
+  function toggleAnswer(faqId) {
+    const answers = document.querySelectorAll("p[data-faq-target='answer']");
+    answers.forEach(function(answer) {
+      answer.classList.add("hidden")
+    })
+    document.querySelector(`p[data-faq-id='${faqId}']`).classList.remove("hidden")
+  }
+</script>

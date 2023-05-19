@@ -8,7 +8,9 @@ import Privacy from "../components/Privacy.astro";
 <Layout title="Welcome to Prompt Pedia!">
   <main>
     <Navbar></Navbar>
-    <Privacy></Privacy>
+    <div class="relative z-20 w-full bg-white max-w-7xl mx-auto px-4">
+      <Privacy></Privacy>
+      <Footer></Footer>
+    </div>
   </main>
-  <Footer></Footer>
 </Layout>

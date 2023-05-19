@@ -10,13 +10,15 @@ import FAQ from "../components/FAQ.astro";
 ---
 
 <Layout title="Welcome to Prompt Pedia!">
-  <main class="relative">
+  <main>
     <Navbar></Navbar>
-    <Hero title="Become the AI Whisperer"></Hero>
-    <Preview></Preview>
-    <Feature></Feature>
-    <Pricing></Pricing>
-    <FAQ></FAQ>
+    <div class="relative z-20 w-full bg-white max-w-7xl mx-auto px-4">
+      <Hero title="Become the AI Whisperer"></Hero>
+      <Preview></Preview>
+      <Feature></Feature>
+      <Pricing></Pricing>
+      <FAQ></FAQ>
+      <Footer></Footer>
+    </div>
   </main>
-  <Footer></Footer>
 </Layout>
